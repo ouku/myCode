@@ -19,22 +19,19 @@ public class Test {
 class MThread extends Thread{
 	 private int num = 0; // 出票数
 	    private int count = 10; // 剩余票数
-	 
 	    boolean flag = false;
-	 
 	    @Override
 	    public void run() {
 	 
 	        while (true) {
 	            synchronized (this) {
-	 
+	            	System.out.println("--");
 	                // 没有余票时，跳出循环
 	                if (count <= 0) {
 	                    break;
 	                }
 	                num++;
 	                count--;
-	 
 	                try {
 	                    Thread.sleep(10);// 模拟网络延时
 	                } catch (InterruptedException e) {
