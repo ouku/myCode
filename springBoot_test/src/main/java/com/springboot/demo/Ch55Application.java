@@ -38,7 +38,8 @@ public class Ch55Application {
 	@RequestMapping("/test")
 	@ResponseBody
 	public List returnMSG() {
-		
+		System.out.println("你好git");
+		System.out.println("你好git");
 		return null;
 	} 
 	public static void main(String[] args) {
