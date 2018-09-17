@@ -25,7 +25,7 @@ class MThread extends Thread{
 	 
 	        while (true) {
 	            synchronized (this) {
-	            	System.out.println("--");
+	            
 	                // 没有余票时，跳出循环
 	                if (count <= 0) {
 	                    break;
