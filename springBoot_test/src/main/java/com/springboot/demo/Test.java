@@ -1,7 +1,7 @@
 package com.springboot.demo;
 
 /**
- * 线程实现方式一 ： 继承Thread类
+ *  线程实现方式一 ： 继承Thread类
  * @author licp
  *
  */
@@ -22,10 +22,8 @@ class MThread extends Thread{
 	    boolean flag = false;
 	    @Override
 	    public void run() {
-	 
 	        while (true) {
-	            synchronized (this) {
-	            
+	            synchronized (this) {            
 	                // 没有余票时，跳出循环
 	                if (count <= 0) {
 	                    break;
